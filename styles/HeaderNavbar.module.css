@@ -1,0 +1,59 @@
+
+
+.smallLogo {
+  height: 10px;
+  margin-top: 0.5vh;
+}
+
+.nav {
+  align-items: center;
+  box-shadow: inset 1px 1px 60px 10px var(--lazy-mayo, 0.3), 3px 3px 5px -1px var(--lazy-barbecue, 0.5);
+  display: none;
+  height: 10vh;
+  justify-content: end;
+  margin-top: 0;
+  width: 100%;
+}
+
+.ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+}
+
+.liLogo {
+  left: 0;
+  margin: 1vh 0 0 1vw;
+  position: absolute;
+}
+
+.li {
+  color: var(--lazy-white);
+  font-size: 2em;
+  margin-right: 2vw;
+}
+
+.li .liLogo:hover  {
+  cursor: pointer;
+}
+
+
+.link {
+  color: var(--lazy-white);
+  text-decoration: none;
+}
+
+.linkActive {
+  color: var(--lazy-ketchup);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    display: flex;
+  }
+}
