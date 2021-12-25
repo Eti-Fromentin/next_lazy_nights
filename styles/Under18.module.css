@@ -1,0 +1,55 @@
+.Under18 {
+  color: var(--lazy-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.under18Title {
+  color: var(--lazy-white);
+  font-size: 2.5em;
+  margin: 2vh 2vh 0 2vh;
+  text-align: center;
+  text-justify: center;
+}
+
+.under18text {
+  color: var(--lazy-white);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+.under18ImageTitle {
+  color: var(--lazy-ketchup);
+  font-size: 2.5em;
+  margin: 2vh;
+  text-align: center;
+}
+
+.under18FoodImages {
+  margin: 2vw;
+  width: 70%;
+}
+
+.under18Logo {
+  
+  height: 10vh;
+  margin: auto;
+  padding-top: 1vh;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .imgContainer {
+    margin: 2vw;
+  }
+}

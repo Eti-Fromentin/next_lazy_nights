@@ -1,0 +1,51 @@
+.ContactUsForm { 
+  display: flex;
+  margin: 3vh 3vw 5vh 3vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email > *:not(:last-child) {
+  margin-bottom: 1vh;
+}
+
+.ContactUsInput {
+  width: 100%;
+}
+
+.ContactUsbtn {
+  margin: 1em 0 2em 0;
+  padding: 0.5vw;
+}
+
+.ContactUsText {
+  margin: auto;
+  margin: 0 10vw 2vw 10vw;
+}
+
+.ContactUsTitle {
+  color: var(--lazy-ketchup);
+  margin: 2vh;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .ContactUsForm {
+    margin: 3vw 10vw;
+  }
+
+  .ContactUsInput {
+    width: 75%;
+  }
+
+ 
+}

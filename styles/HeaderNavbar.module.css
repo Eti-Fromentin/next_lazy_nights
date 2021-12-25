@@ -31,28 +31,30 @@
   position: absolute;
 }
 
+.liLogo:hover {
+  cursor: pointer;
+}
+
 .li {
   color: var(--lazy-white);
   font-size: 2em;
   margin-right: 2vw;
+  text-decoration: none;
 }
 
-.li .liLogo:hover  {
+.li:hover  {
   cursor: pointer;
 }
 
-
-.link {
-  color: var(--lazy-white);
-  text-decoration: none;
-}
-
-.linkActive {
+.liActive {
   color: var(--lazy-ketchup);
+  font-size: 2em;
+  margin-right: 2vw;
   text-decoration: none;
+  filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .nav {
     display: flex;
   }
