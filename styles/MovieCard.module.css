@@ -1,0 +1,104 @@
+.movieCard {
+
+  height: 60vh;
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.cardFront {
+  display: flex;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4vh;
+  bottom: 0;
+  position: absolute;
+}
+
+.movieMaterialIconsOutlined {
+  z-index: 2;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: var(--lazy-white);
+  display: inline-block;
+  direction: ltr;
+  font-family: "Material Icons";
+  font-feature-settings: "liga";
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  height: 4vh;
+  letter-spacing: normal;
+  line-height: 1;
+  padding: 0.5vh 1vw;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#MovieisFavorite {
+  color: var(--lazy-mayo);
+  filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
+}
+
+#MovienotFavorite {
+  color: var(--lazy-white);
+}
+
+#MovieisAdd {
+  color: var(--lazy-ketchup);
+  filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
+}
+
+#MovienotAdd {
+  color: var(--lazy-white);
+}
+
+.movieBtnMore {
+  background: none;
+  border: none;
+}
+
+.cardBack {
+  background-color: burlywood;
+  backface-visibility: inherit;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+  overflow: scroll;
+}
+
+.movieCardTitle {
+  width: 100%;
+  font-size: xx-large
+}
+
+#logoFondDesc {
+  object-fit: contain;
+  opacity: 20%;
+  position: absolute;
+}
+
+#movieBtnClose {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

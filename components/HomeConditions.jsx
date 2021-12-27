@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 
 import CurrentUserNameContext from '../context/userContext';
 
-// import Offer from './Offer';
+import Offer from './Offer';
 import SmallLogo from '../public/assets/SmallLogo.png';
 
 import styles from '../styles/HomeConditions.module.css';
@@ -177,7 +177,7 @@ function HomeConditions() {
       </div>
 
       <div ref={choiceView}></div>
-      {/* {conditionsSubmitted && <Offer mood={mood} drink={drink} fat={fat} />} */}
+      {conditionsSubmitted && <Offer mood={mood} drink={drink} fat={fat} />}
     </main>
   );
 }

@@ -38,7 +38,7 @@ function HeaderNavbar() {
 
         <li className={router.pathname == "/Catalog" ? styles.liActive : styles.li}>
           <Link href="/Catalog">
-            A la carte
+            <a>A la carte</a>
           </Link>
         </li>
 
