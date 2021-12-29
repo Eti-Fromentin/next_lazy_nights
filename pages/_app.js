@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
             </CurrentFinalChoicesContextProvider>
           </CurrentAllFavoritesContextProvider>
         </CurrentUserNameContextProvider>
-      </MobileView> 
+      </MobileView>
     </>
   );
 }
