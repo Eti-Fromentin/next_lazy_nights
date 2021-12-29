@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 
 import BarCodeReader from '../components/BarCodeReader';
 
-import styles from '../styles/catalog.module.css';
+import styles from '../styles/Catalog.module.css';
 
 SwiperCore.use([Pagination, Navigation]);
 
