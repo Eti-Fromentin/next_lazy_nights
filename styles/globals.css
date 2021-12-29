@@ -43,6 +43,6 @@ a {
 .warning {
   color: var(--lazy-white);
   text-align: center;
-  margin-top: 70%;
+  margin-top: 20vh;
   font-size: 1.8em;
 }
