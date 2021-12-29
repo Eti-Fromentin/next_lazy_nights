@@ -7,10 +7,9 @@ const CurrentFinalChoicesContext = createContext({
 
 export function CurrentFinalChoicesContextProvider({ children }) {
   const [userChoice, setUserChoice] = useState([]);
-  const [numberChoice, setNumberChoice] = useState();
 
   return (
-    <CurrentFinalChoicesContext.Provider value={{ userChoice, setUserChoice, numberChoice, setNumberChoice }}>
+    <CurrentFinalChoicesContext.Provider value={{ userChoice, setUserChoice }}>
       {children}
     </CurrentFinalChoicesContext.Provider>
   );

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 import styles from '../styles/ContactUs.module.css';
 
@@ -7,17 +7,17 @@ export function ContactUs() {
   const form = useRef();
 
   const sendEmail = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
-    // emailjs.sendForm('service_4eut92z', 'template_kkdwg3s', form.current, 'user_Blq82a6SwXzdJxeYb8dc6').then(
-    //   (result) => {
-    //     window.alert(result.text);
-    //   },
-    //   (error) => {
-    //     window.alert(error.text);
-    //   },
-    // );
-    // window.alert('thank you for your message');
+    emailjs.sendForm('service_4eut92z', 'template_kkdwg3s', form.current, 'user_Blq82a6SwXzdJxeYb8dc6').then(
+      (result) => {
+        window.alert(result.text);
+      },
+      (error) => {
+        window.alert(error.text);
+      },
+    );
+    window.alert('thank you for your message');
   };
 
   return (

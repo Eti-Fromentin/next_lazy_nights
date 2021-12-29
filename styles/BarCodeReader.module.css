@@ -1,0 +1,59 @@
+
+
+.BarCodeReader {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  width: 90vw;
+}
+
+.BarCodeReaderContainer {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+}
+
+.BarCodeProductCard {
+  display: flex;
+  margin: 1px;
+  margin: auto;
+}
+
+.BarCodeReaderContainer,
+#interactive.viewport {
+  width: 80vw;
+  height: 30vh;
+  margin-bottom: 10vh;
+}
+
+.BarCodeReaderTitle {
+  color: var(--lazy-ketchup);
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.BarCodeReaderh2 {
+  text-align: center;
+}
+
+
+.CameraButton {
+  background-color: var(--lazy-barbecue);
+  color: var(--lazy-white);
+  font-family: var(--main-font-family);
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 15vw;
+  border-radius: 5px;
+  padding: 1vw;
+}
+
+
+.Result {
+  color: var(--lazy-black);
+}

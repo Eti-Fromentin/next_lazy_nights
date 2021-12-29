@@ -23,20 +23,19 @@ function HeaderNavbar() {
             />
           </Link>
         </li>
-
-        <li className={router.pathname == "/Basket" ? styles.liActive : styles.li}>
-          <Link href="/Basket">
+        <li className={router.pathname === "/Sofa" ? styles.liActive : styles.li}>
+          <Link href="/Sofa">
             My Lazy Night
           </Link>
         </li>
 
-        <li className={router.pathname == "/Favorites" ? styles.liActive : styles.li}>
+        <li className={router.pathname === "/Favorites" ? styles.liActive : styles.li}>
           <Link href="/Favorites">
             Favorites
           </Link>
         </li>
 
-        <li className={router.pathname == "/Catalog" ? styles.liActive : styles.li}>
+        <li className={router.pathname === "/Catalog" ? styles.liActive : styles.li}>
           <Link href="/Catalog">
             <a>A la carte</a>
           </Link>

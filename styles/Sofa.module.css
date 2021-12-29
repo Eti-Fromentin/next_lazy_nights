@@ -1,0 +1,55 @@
+.sofaPresentation {
+    color: var(--lazy-white);
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+  
+  .sofaSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sofaSectionTitle {
+    color: var(--lazy-ketchup);
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 30px;
+    /* margin-bottom: -40px; */
+    justify-self: center;
+  }
+  
+  .sofaHrline {
+    border: none;
+    border-top: 5px double var(--lazy-ketchup);
+    color: var(--lazy-white);
+    margin: 5vh 3vh 7vh 3vh;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  
+  .sofaNoLogged {
+    color: var(--lazy-white);
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    margin-top: 40vh;
+  }
+  
+  .btnTicket {
+    display: flex;
+    background-color: var(--lazy-barbecue);
+    color: var(--lazy-white);
+    font-family: var(--main-font-family);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+  }
+  

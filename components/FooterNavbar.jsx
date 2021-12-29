@@ -11,36 +11,36 @@ function FooterNavbar() {
   return (
     <div>
       <footer className={styles.footer}>
-        <p className={router.pathname == "/" ? styles.linkActive : styles.link}>
+        <p className={router.pathname === "/" ? styles.linkActive : styles.link}>
           <span className={styles.materialicons}>
             <Link href="/">home</Link>
           </span>
         </p>
         <p
           className={
-            router.pathname == "/Favorites" ? styles.linkActive : styles.link
+            router.pathname === "/Favorites" ? styles.linkActive : styles.link
           }
         >
           <span className={styles.materialicons}>
-            <Link href="Favorites">bookmark_border</Link>
+            <Link href="/Favorites">star</Link>
           </span>
         </p>
         <p
           className={
-            router.pathname == "/Basket" ? styles.linkActive : styles.link
+            router.pathname === "/Sofa" ? styles.linkActive : styles.link
           }
         >
           <span className={styles.materialicons}>
-            <Link href="Basket">chair</Link>
+            <Link href="/Sofa">chair</Link>
           </span>
         </p>
         <p
           className={
-            router.pathname == "/Catalog" ? styles.linkActive : styles.link
+            router.pathname === "/Catalog" ? styles.linkActive : styles.link
           }
         >
           <span className={styles.materialicons}>
-            <Link href="Catalog">menu_book</Link>
+            <Link href="/Catalog">menu_book</Link>
           </span>
         </p>
         <p
@@ -49,7 +49,7 @@ function FooterNavbar() {
           }
         >
           <span className={styles.materialicons}>
-            <Link href="AboutUs">email</Link>
+            <Link href="/AboutUs">email</Link>
           </span>
         </p>
       </footer>

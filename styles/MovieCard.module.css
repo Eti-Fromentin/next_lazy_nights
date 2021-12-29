@@ -1,7 +1,14 @@
-.movieCard {
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 1px 1px 60px 10px var(--lazy-mayo, 0.3), 3px 3px 5px -1px var(--lazy-barbecue, 0.5);
+}
 
+.movieCard {
   height: 60vh;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
   position: relative;
   display: flex;
@@ -16,10 +23,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80vw;
   height: 4vh;
-  bottom: 0;
-  position: absolute;
+  /* bottom: 0; */
+  position: relative;
+  z-index: 1;
 }
 
 .movieMaterialIconsOutlined {

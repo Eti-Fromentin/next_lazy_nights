@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.FavoritePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.FavoritesFirstTitle {
+  color: var(--lazy-white);
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.FavoritePresentation {
+  color: var(--lazy-white);
+  text-align: center;
+  margin: 3vh 2vw;
+  font-size: 1.2em;
+}
+
+
+.FavoriteSectionTitle {
+  color: var(--lazy-white);
+  text-align: center;
+  margin: 3vh 2vw 1vh 2vw;
+  font-size: 1.8em;
+}
+
+.swiperContainer {
+  margin: auto;
+  height: 50vh;
+}
+
+.favoritesHrline {
+  border: none;
+  width: 70vw;
+  border-top: 5px double var(--lazy-ketchup);
+  color: var(--lazy-white);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.FavoriteUnloggedText {
+  color: var(--lazy-white);
+  text-align: center;
+  margin-top: 70%;
+  font-size: 1.8em;
+}
+
+.FavoriteNoProduct {
+  color: var(--lazy-ketchup);
+  text-align: center;
+}

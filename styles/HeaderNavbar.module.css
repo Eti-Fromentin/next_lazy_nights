@@ -47,11 +47,10 @@
 }
 
 .liActive {
-  color: var(--lazy-ketchup);
   font-size: 2em;
   margin-right: 2vw;
   text-decoration: none;
-  filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
+  filter: drop-shadow(2px 2px 0.2rem var(--lazy-ketchup));
 }
 
 @media screen and (min-width: 700px) {

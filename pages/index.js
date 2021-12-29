@@ -4,7 +4,6 @@ import CurrentUserNameContext from "../context/userContext";
 
 import HomeConditions from "../components/HomeConditions";
 
-
 import Age from "../components/Age";
 
 import styles from "../styles/Home.module.css";

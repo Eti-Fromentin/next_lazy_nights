@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import React, { useState, useEffect, useRef, useContext } from 'react';
-// import Link from 'next/link';
-
 
 import CurrentUserNameContext from '../context/userContext';
 
 import Offer from './Offer';
+
 import SmallLogo from '../public/assets/SmallLogo.png';
 
 import styles from '../styles/HomeConditions.module.css';
@@ -74,7 +73,6 @@ function HomeConditions() {
     <main className={styles.main}>
       <div className={styles.img} >
         <Image src={SmallLogo} alt="Lazy Night Small Logo" 
-        // className="HomeConditionsLogo"
          />
       </div>
 

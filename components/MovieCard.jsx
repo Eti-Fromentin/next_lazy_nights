@@ -3,20 +3,20 @@ import axios from "axios";
 import Image from "next/image";
 
 import CurrentUserNameContext from "../context/userContext";
-// import CurrentAllFavoritesContext from '../Contexts/favoritesContext';
-// import CurrentFinalChoicesContext from '../Contexts/finalChoices';
+import CurrentAllFavoritesContext from "../context/favoritesContext";
+import CurrentFinalChoicesContext from "../context/finalChoices";
 
 import logo from "../public/assets/logo.png";
 
 import styles from "../styles/MovieCard.module.css";
 
 function MovieCard({ id, title, desc, img }) {
-  // const { allFavorites } = useContext(CurrentAllFavoritesContext);
+  const { allFavorites } = useContext(CurrentAllFavoritesContext);
+  const { userName } = useContext(CurrentUserNameContext);
+  const { userChoice, setUserChoice } = useContext(CurrentFinalChoicesContext);
   const [isFavorite, setIsFavorite] = useState(false);
   const [more, setMore] = useState(true);
   const [isAdded, setIsAdded] = useState(false);
-  const { userName } = useContext(CurrentUserNameContext);
-  // const { userChoice, setUserChoice } = useContext(CurrentFinalChoicesContext);
 
   function AddToFavorite() {
     if (userName) {
@@ -25,7 +25,7 @@ function MovieCard({ id, title, desc, img }) {
         username: userName,
         itemCategory: "movie",
         itemName: title,
-        description: desc,
+        moviedescription: desc,
         imgUrl: img,
         itemId: id,
       });
@@ -68,18 +68,31 @@ function MovieCard({ id, title, desc, img }) {
     setMore(!more);
   }
 
-  // useEffect(() => {
-  //   if (allFavorites.some((object) => object.username === userName && object.itemId === id && object.itemCategory === 'movie')) {
-  //     setIsFavorite(true);
-  //   }
-  //   if (userChoice.some((object) => object.username === userName && object.itemId === id && object.itemCategory === 'movie')) {
-  //     setIsAdded(true);
-  //   }
-  // }, [isFavorite, isAdded, userChoice, id, allFavorites, userName]);
-  // useEffect(() => {}, [isFavorite, isAdded, userChoice]);
+  useEffect(() => {
+    if (
+      allFavorites.some(
+        (object) =>
+          object.username === userName &&
+          object.itemId === id &&
+          object.itemCategory === "movie"
+      )
+    ) {
+      setIsFavorite(true);
+    }
+    if (
+      userChoice.some(
+        (object) =>
+          object.username === userName &&
+          object.itemId === id &&
+          object.itemCategory === "movie"
+      )
+    ) {
+      setIsAdded(true);
+    }
+  }, [isFavorite, isAdded, userChoice, id, allFavorites, userName]);
 
   return (
-    <>
+    <div className={styles.card}>
       <div className={styles.movieCard}>
         {more ? (
           <div className={styles.cardFront}>
@@ -89,32 +102,6 @@ function MovieCard({ id, title, desc, img }) {
                 alt=""
                 layout="fill"
               />
-            </div>
-            <div className={styles.btnRow}>
-              <button
-                className={styles.movieMaterialIconsOutlined}
-                onClick={handleClickFlip}
-              >
-                info
-              </button>
-              <button
-                className={styles.movieMaterialIconsOutlined}
-                id={
-                  isFavorite
-                    ? "styles.MovieisFavorite"
-                    : "styles.MovienotFavorite"
-                }
-                onClick={handleClickFavorite}
-              >
-                star
-              </button>
-              <button
-                className={styles.movieMaterialIconsOutlined}
-                id={isAdded ? "styles.MovieisAdd" : "styles.MovienotAdd"}
-                onClick={handleClickAdded}
-              >
-                add_shopping_cart
-              </button>
             </div>
           </div>
         ) : (
@@ -137,7 +124,29 @@ function MovieCard({ id, title, desc, img }) {
           </div>
         )}
       </div>
-    </>
+      <div className={styles.btnRow}>
+        <button
+          className={styles.movieMaterialIconsOutlined}
+          onClick={handleClickFlip}
+        >
+          info
+        </button>
+        <button
+          className={styles.movieMaterialIconsOutlined}
+          id={isFavorite ? styles.MovieisFavorite : styles.MovienotFavorite}
+          onClick={handleClickFavorite}
+        >
+          star
+        </button>
+        <button
+          className={styles.movieMaterialIconsOutlined}
+          id={isAdded ? styles.MovieisAdd : styles.MovienotAdd}
+          onClick={handleClickAdded}
+        >
+          chair
+        </button>
+      </div>
+    </div>
   );
 }
 

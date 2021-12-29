@@ -1,0 +1,126 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 1px 1px 60px 10px var(--lazy-mayo, 0.3), 3px 3px 5px -1px var(--lazy-barbecue, 0.5);
+}
+
+.foodDrinkCard {
+  height: 40vh;
+  width: 90vw;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.cardFront {
+  display: flex;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  height: 4vh;
+  position: relative;
+}
+
+.materialIconsOutlined {
+    z-index: 2;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: var(--lazy-white);
+    display: inline-block;
+    direction: ltr;
+    font-family: "Material Icons";
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-size: 32px;
+    font-weight: normal;
+    height: 4vh;
+    letter-spacing: normal;
+    line-height: 1;
+    padding: 0.5vh 1vw;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #isFavorite {
+    color: var(--lazy-mayo);
+    filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
+  }
+  
+  #notFavorite {
+    color: var(--lazy-white);
+  }
+  
+  #isAdd {
+    color: var(--lazy-ketchup);
+    filter: drop-shadow(2px 2px 0.2rem var(--lazy-white));
+  }
+  
+  #notAdd {
+    color: var(--lazy-white);
+  }
+  
+  .BtnMore {
+    background: none;
+    border: none;
+  }
+  
+  .cardBack {
+    background-color: burlywood;
+    backface-visibility: inherit;
+    display: flex;
+    height: 35vh;
+    position: relative;
+    width: 90vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+  }
+  
+  .cardTitle {
+    width: 100%;
+    font-size: xx-large
+  }
+
+  .cardDetails {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: .5vh;
+  }
+
+  /* .detailsLi {
+  } */
+  
+  #logoFondDesc {
+    object-fit: contain;
+    opacity: 20%;
+    position: absolute;
+  }
+  
+  #BtnClose {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+
+
+
+

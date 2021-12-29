@@ -63,7 +63,6 @@ function AboutUs() {
                   alt="Sophie eating poulp"
                   className={styles.portraitTeam}
                   layout="responsive"
- 
                 />
               </div>
             </div>
@@ -85,8 +84,6 @@ function AboutUs() {
           </p>
         </div>
         <div className={styles.ContactUs}>
-          
-
           <ContactUs />
         </div>
       </div>

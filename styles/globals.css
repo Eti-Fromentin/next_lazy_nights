@@ -39,3 +39,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.warning {
+  color: var(--lazy-white);
+  text-align: center;
+  margin-top: 70%;
+  font-size: 1.8em;
+}
