@@ -15,7 +15,7 @@ import '../styles/Nutrition-label.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <BrowserView>
+      <BrowserView>
           <Head>
             <title>Lazy Nights</title>
             <meta
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
             See you soon!
           </p>
       </BrowserView>
-      <MobileView> */}
+      <MobileView>
         <CurrentUserNameContextProvider>
           <CurrentAllFavoritesContextProvider>
             <CurrentFinalChoicesContextProvider>
@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
             </CurrentFinalChoicesContextProvider>
           </CurrentAllFavoritesContextProvider>
         </CurrentUserNameContextProvider>
-      {/* </MobileView> */}
+      </MobileView>
     </>
   );
 }
