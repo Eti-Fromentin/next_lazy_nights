@@ -88,7 +88,7 @@ function ProductCard({ product }) {
   //   }
   // }, []);
 
-  useEffect(() => {}, [isFavorite]);
+  // useEffect(() => {}, [isFavorite]);
 
   return (
     <div className={styles.productCard}>
